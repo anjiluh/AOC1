@@ -20,6 +20,56 @@
     
     NSLog(@"pigTotal=%f", pigTotal);
     
+    //float to int
+    NSLog(@"5.000000 is practically %d", totalAmountPig);
+    
+    int boys = 2.0;
+    int girls = 3.0;
+    
+    NSLog(@"%d were boys", boys);
+    NSLog(@"%d were girls", girls);
+    
+    //declare the entire family plus relatives
+    float pigFamily;
+    
+    pigFamily = 2 + (int)pigTotal;
+    
+    printf("Including their two relatives brings them to %d", (int)pigFamily);
+    
+    
+    int pigsAtHome = 4;
+    //Loop
+    if((pigsAtHome) <= 4){
+        printf("Someone is at the market!");
+    }else{
+        printf("Everyone is at home!");
+    }
+    
+    //If the pigs went to a party
+    int pigsAtParty = 3;
+    
+    if(pigsAtParty >= 3)
+    {
+        NSLog(@"All the boys are at a party!");
+    }
+    else if (pigsAtParty <= 2);
+    {
+        NSLog(@"All the girls are at a party!");
+    }
+  
+    //
+    
+    for (int x=0; x < 5; x++)
+    {
+        NSLog(@"%d piggies went to the market!", x);
+    }    for(int y=5;y>0; y--)
+            
+        {
+            NSLog(@"%d piggies stayed home!", y);
+        }
+    
+    
+
    
     
     

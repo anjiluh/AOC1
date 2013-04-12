@@ -88,8 +88,18 @@
         break;
     }
 
- 
- 
+ //AND
+    int picnicPigs = 7;
+    
+    if ((picnicPigs < 5) && (picnicPigs > 3))
+    {
+        NSLog(@"there must be 4 pigs at a picnic!");
+    
+    }
+    else if(picnicPigs < 4)
+    {
+        NSLog(@"the boys must be at a picnic!");
+    }
    
     
     
@@ -97,15 +107,7 @@
     
     
     
-/*
-    NSLog(@"pigTotal=%d", "atMarket=%d", pigTotal, atMarket);
-*/
-    
-    //if (pigTotal == 5)
-    //{
-    //    NSLog(@"true");
-    //}
-    
+
     
     
     

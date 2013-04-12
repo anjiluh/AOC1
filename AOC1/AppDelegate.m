@@ -12,19 +12,48 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
+    printf("The little piggy story...Once Upon a time there were 5 little piggies!");
+    //Once Upon a time there were 5 little pig
+    float pigTotal = 5.0f;
+    int totalAmountPig = (int)pigTotal;
+    
+    NSLog(@"pigTotal=%f", pigTotal);
+    
+   
+    
+    
+    
+    
+    
+    
+/*
+    NSLog(@"pigTotal=%d", "atMarket=%d", pigTotal, atMarket);
+*/
+    
+    //if (pigTotal == 5)
+    //{
+    //    NSLog(@"true");
+    //}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
-int temp = 0;
 
-if (temp == 0)
-{
-    NSLog(@"true");
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

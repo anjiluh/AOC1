@@ -57,19 +57,39 @@
         NSLog(@"All the girls are at a party!");
     }
   
-    //
-    
+    //Attempted to join two loops together. But could not get it working. Left them seperate due to zero issues.
+    //loop
     for (int x=0; x < 5; x++)
     {
         NSLog(@"%d piggies went to the market!", x);
-    }    for(int y=5;y>0; y--)
+    }
+    
+    for(int y=5;y>0; y--)
             
         {
             NSLog(@"%d piggies stayed home!", y);
         }
+  
+    //broken example of that one, it functions but does not do what i wanted it to. I wanted it to run like the story. but could not figure it out.
+    //nexted loop
+   for (int x=0; x < 5; x++)
+    {
+        NSLog(@"%d piggies went to the market!", x);
+        for(int y=5;y>0; y--)
+            
+        {
+            NSLog(@"%d piggies stayed home!", y);
+        }
+    }
     
-    
+    //While Loop
+    while(pigFamily > 5){
+        NSLog(@"Its a great mash, but the %d is a very knit tight group!", pigTotal);
+        break;
+    }
 
+ 
+ 
    
     
     

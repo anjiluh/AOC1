@@ -26,17 +26,27 @@
     if (title != nil)
     {
         title.text = @"The Five Love Languages";
+        title.textAlignment = NSTextAlignmentCenter;
+        title.textColor = [UIColor whiteColor];
+        title.backgroundColor = [UIColor blackColor];
     }
     
     [self.view addSubview:title];
     
     //Author
-    UILabel *author = [[UILabel alloc] initWithFrame:CGRectMake(200.0f, 40.0f, 200.0f, 20.0f)];
+    UILabel *author = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 40.0f, 100.0f, 20.0f)];
+    
     if (author != nil)
     {
-        author.text = @"Gary Chapman";
+        author.backgroundColor = [UIColor redColor];
+        author.text = @"Author:";
+        author.textAlignment = NSTextAlignmentRight;
+        
     }
+
     [self.view addSubview: author];
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

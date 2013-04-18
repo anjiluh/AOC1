@@ -60,6 +60,20 @@
     
     [self.view addSubview: authorName];
     
+    //Published
+    UILabel *published = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 60.0f, 100.0f, 20.0f)];
+    
+    if (published != nil)
+    {
+        published.backgroundColor = [UIColor blueColor];
+        published.text = @"Published:";
+        published.textAlignment = NSTextAlignmentRight;
+        published.textColor = [UIColor blackColor];
+        
+    }
+    
+    [self.view addSubview: published];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

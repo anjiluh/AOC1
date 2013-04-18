@@ -109,12 +109,16 @@
     {
         plot.backgroundColor = [UIColor blackColor];
         plot.text = @"The author Gary Chapman proposes that there are five love languages. 1. Receiving Gifts 2. Words of Affirmation 3. Acts of Service 4. Quality Time 5. Physical Touch";
-        plot.textAlignment = NSTextAlignmentLeft;
+        plot.textAlignment = NSTextAlignmentCenter;
         plot.textColor = [UIColor whiteColor];
         plot.numberOfLines = 9;
     }
     
     [self.view addSubview: plot];
+    
+    //NSARRAY
+    
+    NSArray *cookiesArray = [[NSArray alloc] initWithObjects:@"chocolateChip", @"whiteChocolate", @"macadamiaNut", @"oreo", @"peanutButter", nil]; 
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

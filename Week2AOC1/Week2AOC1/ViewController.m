@@ -125,6 +125,11 @@
     
     //NSArray
     NSArray *fiveLoveLanguages = [[NSArray alloc] initWithObjects: loveLanguage1, loveLanguage2, loveLanguage3, loveLanguage4, loveLanguage5, nil];
+    
+    //NSMutableString
+    NSMutableString *mutString = [[NSMutableString alloc] init];
+    
+    
                                   
                                   
 	// Do any additional setup after loading the view, typically from a nib.

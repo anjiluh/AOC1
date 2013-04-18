@@ -116,13 +116,19 @@
     
     [self.view addSubview: plot];
     
-    //NSARRAY
+    //NStrings
+    NSString *loveLanguage1 = @"Receiving Gifts";
+    NSString *loveLanguage2 = @"Words of Affirmation";
+    NSString *loveLanguage3 = @"Acts Of Service";
+    NSString *loveLanguage4 = @"Quality Time";
+    NSString *loveLanguage5 = @"Physical Touch";
     
-    NSArray *fiveLoveLanguages = [[NSArray alloc] initWithObjects:@"receivingGifts", @"wordsOfAffirmation", @"actsOfService", @"qualityTime", @"physicalTouch", nil];
-    
+    //NSArray
+    NSArray *fiveLoveLanguages = [[NSArray alloc] initWithObjects: loveLanguage1, loveLanguage2, loveLanguage3, loveLanguage4, loveLanguage5, nil];
+                                  
+                                  
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

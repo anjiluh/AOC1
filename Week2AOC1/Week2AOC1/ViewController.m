@@ -129,7 +129,20 @@
     //NSMutableString
     NSMutableString *mutString = [[NSMutableString alloc] init];
     
-    
+    for (int i=0; i<5; i++){
+        [mutString appendString:[fiveLoveLanguages objectAtIndex:i]];
+        
+        if (i<3)
+        {
+            [mutString appendString:@", "];
+        }else if (i == 3)
+        {
+            [mutString appendString:@", and "];
+        }else
+        {
+            [mutString appendString:@"."];
+        }
+    }
                                   
                                   
 	// Do any additional setup after loading the view, typically from a nib.

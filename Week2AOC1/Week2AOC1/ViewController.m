@@ -46,6 +46,19 @@
 
     [self.view addSubview: author];
     
+    //AuthorsName
+    UILabel *authorName = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 40.0f, 150.0f, 20.0f)];
+    
+    if (authorName != nil)
+    {
+        authorName.backgroundColor = [UIColor grayColor];
+        authorName.text = @"Gary Chapman";
+        authorName.textAlignment = NSTextAlignmentLeft;
+        authorName.textColor = [UIColor blackColor];
+        
+    }
+    
+    [self.view addSubview: authorName];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

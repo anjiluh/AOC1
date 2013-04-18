@@ -74,6 +74,48 @@
     
     [self.view addSubview: published];
     
+    //Published Year
+    UILabel *publishedYear = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 60.0f, 150.0f, 20.0f)];
+    
+    if (publishedYear != nil)
+    {
+        publishedYear.backgroundColor = [UIColor purpleColor];
+        publishedYear.text = @"1992";
+        publishedYear.textAlignment = NSTextAlignmentLeft;
+        publishedYear.textColor = [UIColor whiteColor];
+        
+    }
+    
+    [self.view addSubview: publishedYear];
+    
+    //Summary
+    UILabel *summary = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 80.0f, 100.0f, 20.0f)];
+    
+    if (summary != nil)
+    {
+        summary.backgroundColor = [UIColor blackColor];
+        summary.text = @"Summary:";
+        summary.textAlignment = NSTextAlignmentLeft;
+        summary.textColor = [UIColor whiteColor];
+        
+    }
+    
+    [self.view addSubview: summary];
+    
+    //Plot of Book
+    UILabel *plot = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 100.0f, 250.0f, 150.0f)];
+    
+    if (plot != nil)
+    {
+        plot.backgroundColor = [UIColor blackColor];
+        plot.text = @"The author Gary Chapman proposes that there are five love languages. 1. Receiving Gifts 2. Words of Affirmation 3. Acts of Service 4. Quality Time 5. Physical Touch";
+        plot.textAlignment = NSTextAlignmentLeft;
+        plot.textColor = [UIColor whiteColor];
+        plot.numberOfLines = 9;
+    }
+    
+    [self.view addSubview: plot];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

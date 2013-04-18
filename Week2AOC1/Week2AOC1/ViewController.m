@@ -118,7 +118,7 @@
     
     //NSARRAY
     
-    NSArray *cookiesArray = [[NSArray alloc] initWithObjects:@"chocolateChip", @"whiteChocolate", @"macadamiaNut", @"oreo", @"peanutButter", nil]; 
+    NSArray *fiveLoveLanguages = [[NSArray alloc] initWithObjects:@"receivingGifts", @"wordsOfAffirmation", @"actsOfService", @"qualityTime", @"physicalTouch", nil];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

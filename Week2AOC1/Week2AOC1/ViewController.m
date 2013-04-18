@@ -28,7 +28,7 @@
         title.text = @"The Five Love Languages";
         title.textAlignment = NSTextAlignmentCenter;
         title.textColor = [UIColor whiteColor];
-        title.backgroundColor = [UIColor blackColor];
+        title.backgroundColor = [UIColor magentaColor];
     }
     
     [self.view addSubview:title];
@@ -107,7 +107,7 @@
     
     if (plot != nil)
     {
-        plot.backgroundColor = [UIColor blackColor];
+        plot.backgroundColor = [UIColor cyanColor];
         plot.text = @"The author Gary Chapman proposes that there are five love languages. 1. Receiving Gifts 2. Words of Affirmation 3. Acts of Service 4. Quality Time 5. Physical Touch";
         plot.textAlignment = NSTextAlignmentCenter;
         plot.textColor = [UIColor whiteColor];
@@ -143,8 +143,36 @@
             [mutString appendString:@"."];
         }
     }
-                                  
-                                  
+    
+    //Label List Items
+    
+    UILabel *labelListItems = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 250.0f, 100.0f, 20.0f)];
+    
+    if (labelListItems != nil)
+    {
+        labelListItems.text = @"List of Items:";
+        labelListItems.textAlignment = NSTextAlignmentLeft;
+        labelListItems.backgroundColor = [UIColor greenColor];
+        labelListItems.textColor = [UIColor brownColor];
+    }
+    
+    [self.view addSubview:labelListItems];
+    
+    // Actual List Items
+    
+    UILabel *actualListItems = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 270.0f, 250.0f, 130.0f)];
+    
+    if (actualListItems != nil)
+    {
+        actualListItems.text = mutString;
+        actualListItems.textAlignment = NSTextAlignmentCenter;
+        actualListItems.numberOfLines = 4;
+        actualListItems.backgroundColor = [UIColor darkGrayColor];
+        actualListItems.textColor = [UIColor redColor];
+    }
+    
+    [self.view addSubview:actualListItems];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 - (void)didReceiveMemoryWarning

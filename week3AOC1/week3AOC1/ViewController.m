@@ -28,6 +28,28 @@
     return result;
 }
 
+//bool function named compare
+
+- (BOOL)compare:(NSInteger)firstInt secondInt:(NSInteger)secondInt
+{
+    NSLog(@"Does %d and %d equal?", firstInt, secondInt);
+    
+    if(firstInt ==secondInt)
+    {
+        NSString *equal = [[NSString alloc] initWithFormat:@"These numbers %d and %d are equal.", firstInt, secondInt];
+//        [self displayAlertWithString:equal];
+        NSLog(@"Yes");
+        return YES;
+    }else
+    {
+        NSString *notEqual = [[NSString alloc] initWithFormat:@"These numbers %d and %d are not equal.", firstInt, secondInt];
+        
+ //       [self displayAlertWithString:notEqual];
+        NSLog(@"No");
+        return NO;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

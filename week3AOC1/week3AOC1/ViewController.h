@@ -13,5 +13,6 @@
 }
 
 - (int)add:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
+- (BOOL)compare:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
 
 @end

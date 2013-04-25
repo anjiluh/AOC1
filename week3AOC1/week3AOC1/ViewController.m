@@ -22,10 +22,6 @@
     int result = firstInt + secondInt;
     NSLog(@"%d + %d = %d", firstInt, secondInt, result);
     
-//    NSString *result = [[NSString alloc] initWithFormat:@"Added together we have %d", result];
-    
-//    [self displayAlertWithString:endResult];
-    
     return result;
 }
 
@@ -38,14 +34,14 @@
     if(firstInt ==secondInt)
     {
         NSString *equal = [[NSString alloc] initWithFormat:@"These numbers %d and %d are equal.", firstInt, secondInt];
-//        [self displayAlertWithString:equal];
+        [self displayAlertWithString:equal];
         NSLog(@"Yes");
         return YES;
     }else
     {
         NSString *notEqual = [[NSString alloc] initWithFormat:@"These numbers %d and %d are not equal.", firstInt, secondInt];
         
- //       [self displayAlertWithString:notEqual];
+    [self displayAlertWithString:notEqual];
         NSLog(@"No");
         return NO;
     }
@@ -55,7 +51,7 @@
 
 -  (NSString *)append:(NSString*)firstString secondString:(NSString *)secondString
 {
-    NSMutableString *stringsAppended = [[NSMutableString alloc] init;
+    NSMutableString *stringsAppended = [[NSMutableString alloc] init];
                                         
     [stringsAppended appendString:firstString];
     [stringsAppended appendString:secondString];
@@ -67,7 +63,7 @@
                                         
 -(void)displayAlertWithString:(NSString *)string
     {
-        UIAlertView *displayAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:displayAlert delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles: nil];
+        UIAlertView *displayAlert = [[UIAlertView alloc] initWithTitle:@"Hold Up" message:string delegate:nil cancelButtonTitle:@"Word bro." otherButtonTitles: nil];
         
         if (displayAlert !=nil)
         {
@@ -77,6 +73,11 @@
 
 - (void)viewDidLoad
 {
+    
+    //Call Functions
+    [self add:10 secondInt:1];
+    [self compare:1 secondInt:2];
+    [self append:@"Append first string to " secondString:@"second string."];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

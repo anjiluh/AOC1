@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+
 //add function
 
 - (int)add:(NSInteger)firstInt secondInt:(NSInteger)secondInt
@@ -21,7 +22,7 @@
     int result = firstInt + secondInt;
     NSLog(@"%d + %d = %d", firstInt, secondInt, result);
     
-    NSString *endResult = [[NSString alloc] initWithFormat:@"Added together we have %d", result];
+//    NSString *result = [[NSString alloc] initWithFormat:@"Added together we have %d", result];
     
 //    [self displayAlertWithString:endResult];
     
@@ -49,6 +50,16 @@
         return NO;
     }
 }
+
+//append function
+
+-  (NSString *)append:(NSString*)firstString secondString:(NSString *)secondString
+{
+    NSMutableString *stringsAppended = [[NSMutableString alloc] initWithFormat:firstString];
+//    [stringsAppended firstString:secondString];
+    return stringsAppended;
+}
+
 
 - (void)viewDidLoad
 {

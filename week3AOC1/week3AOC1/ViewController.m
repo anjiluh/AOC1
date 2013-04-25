@@ -55,14 +55,29 @@
 
 -  (NSString *)append:(NSString*)firstString secondString:(NSString *)secondString
 {
-    NSMutableString *stringsAppended = [[NSMutableString alloc] initWithFormat:firstString];
-//    [stringsAppended firstString:secondString];
+    NSMutableString *stringsAppended = [[NSMutableString alloc] init;
+                                        
+    [stringsAppended appendString:firstString];
+    [stringsAppended appendString:secondString];
+                                        
     return stringsAppended;
 }
 
+//displayAlertWithString function
+                                        
+-(void)displayAlertWithString:(NSString *)string
+    {
+        UIAlertView *displayAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:displayAlert delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles: nil];
+        
+        if (displayAlert !=nil)
+        {
+            [displayAlert show];
+        }
+    }
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

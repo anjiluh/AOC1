@@ -453,6 +453,7 @@
 				A5363B30171DD2350094D06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5363B31171DD2350094D06C /* Build configuration list for PBXNativeTarget "Week2AOC1Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +462,7 @@
 				A5363B33171DD2350094D06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

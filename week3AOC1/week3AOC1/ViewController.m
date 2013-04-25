@@ -21,6 +21,11 @@
     int result = firstInt + secondInt;
     NSLog(@"%d + %d = %d", firstInt, secondInt, result);
     
+    NSString *endResult = [[NSString alloc] initWithFormat:@"Added together we have %d", result];
+    
+//    [self displayAlertWithString:endResult];
+    
+    return result;
 }
 
 - (void)viewDidLoad

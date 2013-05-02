@@ -44,7 +44,8 @@
     {
         login.frame = CGRectMake(250.0f, 50.0f, 60.0f, 30.0f);
         [login setTitle:@"Login" forState:UIControlStateNormal];
-        
+//        login.tag = LOGIN;
+//        [loginButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:login];
     }
     

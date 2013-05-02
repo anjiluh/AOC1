@@ -12,6 +12,7 @@
 {
     UILabel *username;
     UITextField *usernameInput;
+    UIButton *login;
 }
 
 

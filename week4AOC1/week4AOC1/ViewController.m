@@ -38,6 +38,15 @@
         [self.view addSubview:usernameInput];
     }
     
+    //UIButton Login
+    login = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if(login != nil)
+    {
+        login.frame = CGRectMake(250.0f, 50.0f, 60.0f, 30.0f);
+        [login setTitle:@"Login" forState:UIControlStateNormal];
+        
+        [self.view addSubview:login];
+    }
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

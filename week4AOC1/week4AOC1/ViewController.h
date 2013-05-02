@@ -15,6 +15,7 @@
     UIButton *login;
     UILabel *enterUsername;
     UILabel *statusLabel;
+    UIButton *showDate;
 }
 
 

@@ -60,13 +60,26 @@
         enterUsername.textAlignment = UITextAlignmentCenter;
     }
     [self.view addSubview:enterUsername];
+    
+    //show date button
+    showDate = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if(showDate != nil)
+    {
+        showDate.frame = CGRectMake(10.0f, 250.0f, 100.0f, 50.0f);
+        [showDate setTitle:@"Show Date" forState:UIControlStateNormal];
+        showDate.tag = 1;
+        [showDate addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:showDate];
+    }
 
     [super viewDidLoad];
     
-    -(void)closeKeyboard {
-        [usernameInput resignFirstResponder];
+/*    -[(BOOL)textFieldShouldReturn:(UITextField *)textfield {
+        if(textfield == usernameInput){
+            [textField resignFirstResponder];
+        }
     }
-    
+ */   
     - (void)onClick:(UIButton*)button
     
     ////Button Actions
@@ -74,6 +87,7 @@
  if(button.tag == 0)
  {
      NSString *usernameText = usernameInput.text;
+//     [self textFieldShouldReturn:usernameInput];
      
         if (usernameText.length == 0)
         {
@@ -85,11 +99,28 @@
          NSString *usernameText = [[NSString alloc] initWithString:usernameInput.text];
          statusLabel.text = [NSString stringWithFormat:@"User: '%d' has been logged in", usernameText];
      }
+     
+     //date actions
+     else if (button.tag == 1)
+     {
+         NSDate *date = [NSDate date];
+         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+         if (dateFormatter != nil)
+         {
+             [dateFormatter setDateFormat:@"MMMM d, yyyy h:mm:s:a zzzz"];
+             NSString* dateLabel = [dateFormatter stringFromDate:date];
+             UIAlertView *dateAlertView = [[UIAlertView alloc] initWithTitle:@"Current Date" message:dateLabel delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
+             if(dateAlertView != nil)
+             {
+                 [dateAlertView show];
+             }
+         }
+     }
  }
 }
     
     
-    
+
 
 	// Do any additional setup after loading the view, typically from a nib.
 

@@ -18,8 +18,17 @@
 
 - (void)viewDidLoad
 {
+    //backgroundColor
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
-    
+    //username
+    username = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 12.0f, 100.0f, 20.0f)];
+    if(username != nil)
+    {
+        username.backgroundColor = [UIColor lightGrayColor];
+        username.text = @"Username: ";
+    }
+    [self.view addSubview:username];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

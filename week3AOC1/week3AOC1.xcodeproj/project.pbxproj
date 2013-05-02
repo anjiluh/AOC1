@@ -467,6 +467,7 @@
 				A5D457CE1728B69100CB3892 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5D457CF1728B69100CB3892 /* Build configuration list for PBXNativeTarget "week3AOC1Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				A5D457D11728B69100CB3892 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

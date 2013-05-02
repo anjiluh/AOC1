@@ -14,6 +14,7 @@
     UITextField *usernameInput;
     UIButton *login;
     UILabel *enterUsername;
+    UILabel *statusLabel;
 }
 
 

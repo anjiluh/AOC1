@@ -42,10 +42,11 @@
     login = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     if(login != nil)
     {
+        login.tag = 0;
         login.frame = CGRectMake(250.0f, 50.0f, 60.0f, 30.0f);
         [login setTitle:@"Login" forState:UIControlStateNormal];
-//        login.tag = LOGIN;
-//        [loginButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+       
+        [login addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:login];
     }
     
@@ -59,10 +60,39 @@
         enterUsername.textAlignment = UITextAlignmentCenter;
     }
     [self.view addSubview:enterUsername];
-    
+
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    -(void)closeKeyboard {
+        [usernameInput resignFirstResponder];
+    }
+    
+    - (void)onClick:(UIButton*)button
+    
+    ////Button Actions
+{
+ if(button.tag == 0)
+ {
+     NSString *usernameText = usernameInput.text;
+     
+        if (usernameText.length == 0)
+        {
+            statusLabel.text = @"Username cannot be empty.";
+            statusLabel.textColor = [UIColor redColor];
+        }
+     else
+     {
+         NSString *usernameText = [[NSString alloc] initWithString:usernameInput.text];
+         statusLabel.text = [NSString stringWithFormat:@"User: '%d' has been logged in", usernameText];
+     }
+ }
 }
+    
+    
+    
+
+	// Do any additional setup after loading the view, typically from a nib.
+
 
 - (void)didReceiveMemoryWarning
 {

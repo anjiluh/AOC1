@@ -30,6 +30,15 @@
     }
     [self.view addSubview:username];
     
+    //UITExt field
+    usernameInput = [[UITextField alloc] initWithFrame:CGRectMake(100.0f, 10.0f, 210.0f, 30.0f)];
+    if(usernameInput != nil)
+    {
+        usernameInput.borderStyle = UITextBorderStyleRoundedRect;
+        [self.view addSubview:usernameInput];
+    }
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

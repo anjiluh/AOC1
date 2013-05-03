@@ -16,6 +16,8 @@
     UILabel *enterUsername;
     UILabel *statusLabel;
     UIButton *showDate;
+    UIButton *info;
+    UILabel *infoText;
 }
 
 

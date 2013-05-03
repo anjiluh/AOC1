@@ -71,15 +71,48 @@
         [showDate addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:showDate];
     }
+    
+    //info button
+    info = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    if(info != nil)
+    {
+        info.frame = CGRectMake(20.0f, 330.0f, 25.0f, 25.0f);
+        info.tag = 2;
+        [info addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:info];
+    }
+    
+    //empty text UI for info field
+    
+    infoText = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 400.0f, 300.0f, 75.0f)];
+    if (infoText != nil)
+    {
+        infoText.backgroundColor = [UIColor lightGrayColor];
+        infoText.TextColor = [UIColor whiteColor];
+        infoText.textAlignment = UITextAlignmentCenter;
+    }
+    
+    
+    //usernameIsGood  = [[UILabel alloc] initWithFrame:CGRectMake(]
 
+    //closekeyboard
+/* UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:(closeKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
+    -(void)closeKeyboard {
+        [usernameInput resignFirstResponder];
+    }
+*/    
     [super viewDidLoad];
     
-/*    -[(BOOL)textFieldShouldReturn:(UITextField *)textfield {
+   -[(BOOL)textFieldShouldReturn:(UITextField *)textfield {
         if(textfield == usernameInput){
             [textField resignFirstResponder];
+            return NO;
         }
     }
- */   
+
     - (void)onClick:(UIButton*)button
     
     ////Button Actions
@@ -114,6 +147,14 @@
              {
                  [dateAlertView show];
              }
+         }
+         //info actions
+         else if (button.tag == 2)
+         {
+             infoText.text = @"This application was created by: Angela Waters";
+             infoText.numberOfLines = 2;
+             infoText.backgroundColor = [UIColor blackColor];
+             infoText.textColor = [UIColor whiteColor];
          }
      }
  }

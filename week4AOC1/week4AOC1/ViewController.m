@@ -106,11 +106,11 @@
 */    
     [super viewDidLoad];
     
-   -[(BOOL)textFieldShouldReturn:(UITextField *)textfield {
-        if(textfield == usernameInput){
+    -(BOOL)textFieldShouldReturn:(UITextField *)textField {
+        if (textField == usernameInput) {
             [textField resignFirstResponder];
-            return NO;
         }
+        return NO;
     }
 
     - (void)onClick:(UIButton*)button

@@ -82,36 +82,17 @@
         [self.view addSubview:info];
     }
     
-    //empty text UI for info field
-    
-    infoText = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 400.0f, 300.0f, 75.0f)];
-    if (infoText != nil)
-    {
-        infoText.backgroundColor = [UIColor lightGrayColor];
-        infoText.TextColor = [UIColor whiteColor];
-        infoText.textAlignment = UITextAlignmentCenter;
-    }
-    
-    
-    //usernameIsGood  = [[UILabel alloc] initWithFrame:CGRectMake(]
-
-    //closekeyboard
-/* UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:(closeKeyboard)];
-    
-    [self.view addGestureRecognizer:tap];
-    
-    -(void)closeKeyboard {
-        [usernameInput resignFirstResponder];
-    }
-*/    
-    [super viewDidLoad];
-    
-    -(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    //empty text UI for info field    
+      -(BOOL)textFieldShouldReturn:(UITextField *)textField {
         if (textField == usernameInput) {
             [textField resignFirstResponder];
         }
         return NO;
     }
+   
+    [super viewDidLoad];
+    
+  
 
     - (void)onClick:(UIButton*)button
     
